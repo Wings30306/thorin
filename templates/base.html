@@ -1,6 +1,7 @@
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
   <title>{{ page_title }}</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/clean-blog.min.css') }}">
@@ -53,8 +54,7 @@
 
   <!-- Main Content -->
   <div class="container-fluid">
-    {% block content %}
-    {% endblock %}
+    {% block content %} {% endblock %}
   </div>
 
   <hr>
